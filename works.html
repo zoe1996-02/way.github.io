@@ -41,9 +41,12 @@
 		</div>
 		<div class="body">
 			<div class="bloginfo">
-				<img id="ProfilePhoto" src="http://imgsize.ph.126.net/?imgurl=http://img1.ph.126.net/nv3jMH3eqVSjYoBa_tNoWw==/6631955071585690285.jpg_128x128x0x90.jpg" alt="Profile Photo" />
-				
-			<!-- 侧边栏 -->			</div>
+				<p><img id="ProfilePhoto" src="http://imgsize.ph.126.net/?imgurl=http://img1.ph.126.net/nv3jMH3eqVSjYoBa_tNoWw==/6631955071585690285.jpg_128x128x0x90.jpg" alt="Profile Photo" />
+				  
+				  <!-- 侧边栏 -->			</p>
+				<p>&nbsp;</p>
+				<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html"><img src="幻灯片/timg.png" width="61" height="54"></a></p>
+			</div>
 			<div class="postlist">
 			
 			
@@ -151,11 +154,31 @@
 <p>#define buzzer_pin 8 //定义蜂鸣器引脚</p> 
 <p>/*------------定义歌曲音调的数组------------*/</p> 
 <p>int notes[]&nbsp;=&nbsp;{</p> 
-<p>&nbsp; C5, D5, E5, F5, G5, A5, B5, C6</p> 
+<p>&nbsp;E5,G5,G5,G5,E5,A6,A5,B5;<br>
+A5,A5,G5,C6,C6,C6,C6,A5,C6,A5,G5;<br>
+E5,G5,G5,G5,E5,A5,A5,B5;<br>
+A5,A5,G5,C6,C6,C6,C6,A5,A5,C6,D6;<br>
+G6,G6,G6,G6,G6,G6,E6,D6,C6,C6,A5,A5,A5,C6,A5,C6,D6,D6,D6,C6,D6,C6,E6,D6,D6;<br>
+E6,E6,E6,E6,D6,D6,6,C6,C6,D6,C6,A5,G5;<br>
+G5,G5,G5,A5,G5,D6,E6,C6;<br>
+C6;<br>
+E6;<br>
+E6,E6,E6,E6,D6,D6;<br>
+C6,C6,C6,D6,C6,A5,G5;<br>
+G5,G5,G5,A5,G5,D6,E6,C6;</p> 
 <p>};</p> 
 <p>/*------------定义歌曲节奏的数组------------*/</p> 
 <p>byte beats[]&nbsp;=&nbsp;{</p> 
-<p>&nbsp; 200, 200, 200, 200, 200, 200, 200, 800</p> 
+<p>&nbsp;100,100,200,100,100,100,100,100;<br>
+100,100,100,200,100,100,100,100,100,100,100,200;<br>
+100,100,200,100,100,100,100,100;<br>
+100,100,100,200,100,50,100,100,100,100,200;<br>
+100,200,50,50,100,100,100,100,100,200,50,50,100,100,100,100,100,100,100,100,100,100,100,100,200;<br>
+100,200,100,100,200,100,200,100,100,100,100,100,100,100,100,100,100,100,100,200;<br>
+200;<br>
+200;<br>
+100,200,100,100,100,200,100,200,100,100,100,100;<br>
+100,100,100,100,100,100,100,200;</p> 
 <p>};</p> 
 <p>void setup()&nbsp;{</p> 
 <p>&nbsp; pinMode(buzzer_pin, OUTPUT);&nbsp;//定义蜂鸣器引脚为输出状态</p> 
@@ -166,11 +189,28 @@
 <p>&nbsp;&nbsp;&nbsp; tone(buzzer_pin, notes[i]);&nbsp;//播放音乐</p> 
 <p>&nbsp;&nbsp;&nbsp; delay(beats[i]);&nbsp;//播放间隔</p> 
 <p>&nbsp;&nbsp;&nbsp; noTone(buzzer_pin);</p> 
-<p>&nbsp;&nbsp;&nbsp; delay(10);</p> 
+<p>&nbsp;&nbsp;&nbsp; delay(100);</p> 
 <p>&nbsp;&nbsp;}</p> 
 <p>}</p> 
 <p>歌曲简谱：</p> 
-<p><img src="http://imglf2.nosdn.127.net/img/cll6SlM4TURoSXNXTmJVVHR5TXJhVzlzdlJWT0JMbFNPSkNSSDFlNjhQOGdTOXI1cUFJZHZnPT0.gif?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2"  border="0"  hspace="0"  vspace="0"  smallsrc="http://imglf2.nosdn.127.net/img/cll6SlM4TURoSXNXTmJVVHR5TXJhVzlzdlJWT0JMbFNPSkNSSDFlNjhQOGdTOXI1cUFJZHZnPT0.gif?=imageView&amp;thumbnail=164x164&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2"  style="max-width:500px;"  /><br /><br /></p>
+<p><img src="http://imglf2.nosdn.127.net/img/cll6SlM4TURoSXNXTmJVVHR5TXJhVzlzdlJWT0JMbFNPSkNSSDFlNjhQOGdTOXI1cUFJZHZnPT0.gif?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2"  border="0"  hspace="0"  vspace="0"  smallsrc"http://imglf2.nosdn.127.net/img/cll6SlM4TURoSXNXTmJVVHR5TXJhVzlzdlJWT0JMbFNPSkNSSDFlNjhQOGdTOXI1cUFJZHZnPT0.gif?=imageView&amp;thumbnail=164x164&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2"  style="max-width:500px;"  /></p>
+<p>项目二：“吉”</p>
+<p><img src="幻灯片/幻灯片1.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片2.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片3.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片4.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片5.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片6.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片7.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片8.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片9.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片10.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片11.jpg" width="547" height="321"></p>
+<p><img src="幻灯片/幻灯片12.jpg" width="547" height="321"><br />
+  
+  <br />
+</p>
+</p>
 					
 					
 				</div>
@@ -189,8 +229,8 @@
 					<li>
 						<a href="http://lipuzi.lofter.com/post/1ed6cf40_fdf5704"/>
 							<img src="http://img.ph.126.net/mo9nbS6BdFtheoZQNegA1Q==/5629519325422420269.png"/>
-							2017-05-28
-						</a>
+							2017-05
+					  </a>
 					</li>
 					
 					
